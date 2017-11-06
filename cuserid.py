@@ -1,5 +1,6 @@
 ﻿#!/usr/bin/env python
 #  -*- coding:utf-8 -*-
+
 import sys
 import MySQLdb
 import json
@@ -10,11 +11,11 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 #改用户手机号13564789331   13061986932  18221551680
 #mobile="15138460851"
-#mobile="13564789331"
-mobile="13861068037"
+#mobile="13564789331" 18013970134
+mobile="18256935103"
 
 #改环境名称
-environment="dev-ps-900-new-we-ug0sn1"
+environment="dev-393-test-zmop-izp4wc"
 				
 def searchuid():
 	if environment[0:4]=="test":

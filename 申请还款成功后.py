@@ -30,8 +30,8 @@ realname=(str(list2[0][0])).decode("utf-8")
 import urllib2,time
 #response=urllib2.urlopen("http://"+hj+".kdqugou.com/frontend/web/notify/test-callback?type=2&code=2&order_id="+orderuuid+"&money=30000")#部分还款改money后的
 print "http://"+hj+".kdqugou.com/frontend/web/notify/test-callback?type=2&code=0&order_id="+orderuuid+"&money="+str(money)
-#response=urllib2.urlopen("http://"+hj+".kdqugou.com/frontend/web/notify/test-callback?type=2&code=0&order_id="+orderuuid+"&money="+str(money))
-response=urllib2.urlopen("http://"+hj+".kdqugou.com/frontend/web/notify/test-callback?type=2&code=0&money=100000&order_id="+orderuuid)#部分还款
+response=urllib2.urlopen("http://"+hj+".kdqugou.com/frontend/web/notify/test-callback?type=2&code=0&order_id="+orderuuid+"&money="+str(money))
+#response=urllib2.urlopen("http://"+hj+".kdqugou.com/frontend/web/notify/test-callback?type=2&code=0&money=100000&order_id="+orderuuid)#部分还款
 m=response.read().decode('utf-8') 
 d=json.loads(m)
 k=d['code']

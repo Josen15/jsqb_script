@@ -12,7 +12,7 @@ from cuserid import searchuid,inver
 #芝麻15<=zmop<=39
 #转化时间戳
 
-overday=13  #需要改逾期天数
+overday=1  #需要改逾期天数
 n=overday+2
 m=overday+1
 yesterday= str(int(time.mktime((datetime.datetime.now() - datetime.timedelta(days = overday)).timetuple())))
